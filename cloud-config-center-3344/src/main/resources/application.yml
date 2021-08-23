@@ -9,11 +9,18 @@ spring:
     config:
       server:
         git:
+
+#          uri: https://github.com/mao9085/springcloud-config.git # git仓库的地址
+#          search-paths: springcloud-config  # git仓库地址下的相对地址，可以配置多个，用,分割。
+#          username: mao9085@outlook.com#Git仓库用户名
+#          password: zxasqw@200#Git仓库密码
+
+
           uri: git@github.com:mao9085/springcloud-config.git #git的仓库地址
           search-paths:   #搜索目录
             - springcloud-config
-          strict-host-key-checking: false
-      label: master   #读取的分支
+#          strict-host-key-checking: false
+      label: main   #读取的分支
 
 
 eureka:
